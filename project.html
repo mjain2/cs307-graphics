@@ -52,16 +52,17 @@ This html creates a lovely holiday scene! It includes:
       }
 
       </style>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/libs/three.min.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/libs/OrbitControls.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/libs/tw.js"></script>
-      <script src ="http://cs.wellesley.edu/~cs307/threejs/libs/dat.gui.min.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_christmasTree.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_lightsAndTV.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_fireplace.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_couch.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_vases.js"></script>
-      <script src="http://cs.wellesley.edu/~cs307/threejs/contrib/mjain2_train.js"></script>
+      <!--script src="http://cs.wellesley.edu/~cs307/threejs/libs/three.min.js"></script-->
+      <script src = "js/three.min.js"></script>
+      <script src="js/OrbitControls.js"></script>
+      <script src="js/tw.js"></script>
+      <script src ="js/dat.gui.min.js"></script>
+      <script src="mjain2_christmasTree.js"></script>
+      <script src="mjain2_lightsAndTV.js"></script>
+      <script src="mjain2_fireplace.js"></script>
+      <script src="mjain2_couch.js"></script>
+      <script src="mjain2_vases.js"></script>
+      <script src="mjain2_train.js"></script>
 
     </head>
     <body>
@@ -132,6 +133,7 @@ This html creates a lovely holiday scene! It includes:
       var halfRoomDepth = roomParams.roomDepth/2;
 
       //define floor and wall textures
+      THREE.ImageUtils.crossOrigin = '';
       var texture = new THREE.ImageUtils.loadTexture('brick.jpg',new THREE.UVMapping);
       var carpet = new THREE.ImageUtils.loadTexture('carpet.jpg',new THREE.UVMapping);
       var colorMaterials = [
